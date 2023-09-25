@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Form</title>
+</head>
+<body>
+  <h1>Sign Up</h1>
+
+  <form action="">
+    <table>
+      <tr>
+        <td>
+          <label for="">First Name</label> <br>
+          <input type="text" name="firstName" id="first_name" placeholder="John">
+        </td>
+        <td>
+          <label for="">Last Name</label> <br>
+          <input type="text" name="lastName" id="last_name" placeholder="Doe">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Mobile Phone</label> <br>
+          <input type="number" name="mobilePhone" id="mobile_phone" placeholder="0811xxxxyyyy">
+        </td>
+        <td>
+          <label for="">Email Address</label> <br>
+          <input type="email" name="emailAddress" id="email_address" placeholder="email@domain.com">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="">Password</label> <br>
+          <input type="password" name="passWord" id="pass_word" placeholder="YouR@s3cRed" size="45">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Date of Birth</label> <br>
+          <input type="date" name="dateOfBirth" id="date_of_birth">
+        </td>
+        <td>
+          <label for="">Gender</label> <br>
+          <input type="radio" name="gender" id="genderMale" value="Male"> Male 
+          <input type="radio" name="gender" id="genderFemale" value="Female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="">Choose Faculty</label> <br>
+          <select name="faculty" id="faculty">
+            <option value="-">-- Choose Faculty --</option>
+            <option value="FEB">Fakultas Ekonomi dan Bisnis</option>
+            <option value="FFIL">Fakultas Filsafat</option>
+            <option value="FILKOM">Fakultas Ilmu Komputer</option>
+            <option value="FKIP">Fakultas Keguruan dan Ilmu Pendidikan</option>
+            <option value="FKEP">Fakultas Keperawatan</option>
+            <option value="FAPERTA">Fakultas Pertanian</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="">Your Interest</label> <br>
+          <input type="checkbox" name="interest" id="interest1"> Database 
+          <input type="checkbox" name="interest" id="interest2"> Programming
+          <input type="checkbox" name="interest" id="interest3"> Networking 
+          <input type="checkbox" name="interest" id="interest4"> Multimedia 
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="">Describe Yourself</label> <br>
+          <textarea name="aboutYou" id="about_you" cols="40" rows="6"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="reset" value="Reset"> 
+          <input type="submit" value="Sign Up">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
