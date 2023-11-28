@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: 
+    "sidebar  header"
+    "sidebar  main";
+}
+
+.header {
+  background-color: aqua;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: black;
+  color: #fff;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: #c3c5ca;
+  grid-area: main;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c4 c5"
+    "c4 c4 c6";
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.balance {
+  grid-area: c1;
+  background-color: #fff;
+  border-radius: 10px;
+  
+}
+
+.card:nth-child(2) {
+  grid-area: c2;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+background: linear-gradient(#e66465, #9198e5);
+
+}
+
+.card:nth-child(3) {
+  grid-area: c3;
+}
+
+.card:nth-child(4) {
+  grid-area: c4;
+  padding: 20px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.card:nth-child(5) {
+  grid-area: c5;
+}
+
+.card:nth-child(6) {
+  grid-area: c6;
+}
